@@ -1,0 +1,16 @@
+package com.example.actividad2_imc;
+
+import android.view.View;
+import android.widget.TextView;
+
+public class MyCodeButton implements View.OnClickListener{
+
+    TextView textView;
+    public MyCodeButton(TextView mytextview){
+        this.textView=mytextview;
+    }
+    @Override
+    public void onClick(View view){
+        textView.setText("Hola Mundo");
+    }
+}
